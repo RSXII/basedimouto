@@ -1,0 +1,617 @@
+html {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  box-sizing: border-box; }
+
+#container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #1E1E27;
+  padding: 0 0 20px 0; }
+
+.sectionContainer {
+  margin-bottom: 6em; }
+
+.feedback ul li {
+  color: #b50414; }
+
+.replyPara {
+  padding: 1em 0;
+  background: #2C2C3F; }
+
+.loginreg p {
+  width: 50%; }
+
+.loginreg p:last-child {
+  text-align: right; }
+
+.loginreg a {
+  color: #D1DCF0;
+  text-decoration: none; }
+
+.loginreg a:hover {
+  color: #b59d2a; }
+
+.tos {
+  min-width: 200px;
+  margin: 0 auto;
+  background: #2C2C3F;
+  padding: 10px 2em; }
+
+.tos h1 {
+  text-align: center; }
+
+.tos h3 {
+  text-align: center;
+  margin: 60px 0 30px 0;
+  color: #b59d2a; }
+
+body {
+  margin: 0;
+  background: #0c0c22;
+  color: #D1DCF0;
+  width: auto; }
+
+#adminPanel {
+  display: inline-block;
+  width: 25%; }
+
+#viewBox {
+  display: inline-block;
+  width: 72%;
+  box-sizing: border-box;
+  padding-top: 1em; }
+  #viewBox a {
+    color: #D1DCF0;
+    text-decoration: none; }
+  #viewBox section:nth-child(odd) {
+    background: #232336; }
+  #viewBox section:nth-child(even) {
+    background: #3b3b51; }
+  #viewBox div {
+    display: inline-block;
+    width: 23%;
+    overflow: hidden;
+    padding: .2em 0 .2em .5em; }
+
+header {
+  width: 100%; }
+  header #utilityMenu {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: relative;
+    display: table;
+    height: 14px;
+    padding: .4em 1em;
+    font-size: 1em; }
+    header #utilityMenu div {
+      text-align: right; }
+      header #utilityMenu div a {
+        text-decoration: none;
+        color: #D1DCF0; }
+    header #utilityMenu form {
+      display: table-cell; }
+    header #utilityMenu input[type=search] {
+      text-align: left;
+      opacity: .6;
+      background: white;
+      color: white;
+      border: none;
+      transition: 500ms ease;
+      width: 100px;
+      border-radius: 0 20px 20px 0;
+      margin: .2em 0;
+      padding-left: .5em; }
+    header #utilityMenu input[type=search]:focus {
+      opacity: 1;
+      color: black;
+      background: #D1DCF0;
+      width: auto;
+      border-radius: inherit; }
+    header #utilityMenu form#logout {
+      display: table-cell;
+      text-align: right;
+      width: 8em; }
+    header #utilityMenu #log_reg {
+      text-align: right;
+      padding: .2em; }
+      header #utilityMenu #log_reg a {
+        color: #D1DCF0;
+        text-decoration: none; }
+      header #utilityMenu #log_reg a:hover {
+        color: white; }
+  header p {
+    padding: 0;
+    margin: 0; }
+  header #heroImage {
+    min-height: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0;
+    background: url(../images/basedbanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 0; }
+  header header nav #mobileMenu.stickyTop #profileDesktop {
+    display: none;
+    overflow: hidden; }
+  header .profileName {
+    display: none; }
+  header #breadcrumb {
+    width: 100%;
+    min-height: 40px;
+    background: #484673;
+    display: table;
+    margin-bottom: 20px; }
+    header #breadcrumb div {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: .8em; }
+      header #breadcrumb div a {
+        width: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+        color: #D1DCF0;
+        text-decoration: none; }
+    header #breadcrumb ul {
+      width: 100%;
+      margin: 0;
+      display: table;
+      min-height: 40px; }
+      header #breadcrumb ul li {
+        display: table-cell;
+        color: #D1DCF0;
+        font-size: .9em;
+        vertical-align: middle;
+        border-right: 2px solid #D1DCF0;
+        width: 60px;
+        padding-left: 10px;
+        overflow: hidden; }
+      header #breadcrumb ul li a {
+        color: #D1DCF0;
+        text-decoration: none; }
+  header #topNav.stickyTop {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    opacity: .8;
+    min-height: 20px;
+    border-bottom: 2px solid black;
+    padding-top: 10px; }
+    header #topNav.stickyTop ul {
+      padding: 0; }
+  header #topNav {
+    min-height: 40px;
+    background: #1E1E27;
+    position: relative; }
+    header #topNav p {
+      text-align: center;
+      font-size: 1.2em;
+      cursor: pointer; }
+    header #topNav ul.mobileOpen li {
+      display: block;
+      width: 100%;
+      cursor: pointer; }
+    header #topNav ul {
+      display: table;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0; }
+      header #topNav ul li {
+        font-size: 1.2em;
+        list-style-type: none;
+        padding: .8em 0;
+        display: none; }
+      header #topNav ul li a {
+        color: #D1DCF0;
+        text-decoration: none; }
+      header #topNav ul li a:hover {
+        color: cornflowerblue; }
+
+footer {
+  background: #112;
+  padding: 20px;
+  max-width: 1440px;
+  margin: 0 auto; }
+  footer section {
+    width: 80%;
+    margin: 0 auto; }
+    footer section div {
+      width: 49%;
+      display: inline-block; }
+      footer section div a {
+        text-decoration: none;
+        color: #D1DCF0; }
+    footer section div:last-of-type {
+      text-align: right; }
+
+.category {
+  background: #484673;
+  color: #D1DCF0;
+  padding: .1em 1em .8em 1em;
+  margin-bottom: 6em; }
+  .category h3 {
+    font-size: 2.3em;
+    color: #D1DCF0;
+    text-decoration: none; }
+  .category h3 a {
+    color: #D1DCF0;
+    text-decoration: none;
+    opacity: .8; }
+
+.results {
+  width: 60%;
+  min-width: 200px;
+  margin: 0 auto; }
+
+.replyToBox {
+  width: 100%;
+  text-align: right;
+  padding-right: 1em;
+  padding-top: 0;
+  min-height: 40px; }
+  .replyToBox a {
+    color: #b59d2a;
+    text-decoration: none; }
+
+.headlineTitle {
+  text-align: center;
+  margin-bottom: 6em;
+  border-bottom: 1px solid #D1DCF0; }
+  .headlineTitle h4 a {
+    color: #b59d2a;
+    text-decoration: none; }
+  .headlineTitle h4 span {
+    color: #b59d2a;
+    text-decoration: none; }
+
+.pagination {
+  width: 60%;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 50px 0 10px 0; }
+
+.pagination a {
+  color: #b59d2a; }
+
+.searchresults a {
+  color: #b59d2a; }
+
+.post:nth-of-type(odd) .postHeader {
+  background: #2C2F55; }
+
+.indexList .post::after,
+.catList .post::after {
+  content: "Thread Starter";
+  color: #b59d2a;
+  font-weight: bold; }
+
+.post {
+  width: 90%;
+  min-width: 240px;
+  margin: 0 auto 6em auto;
+  box-shadow: 8px 8px #111; }
+  .post .postHeader {
+    background: #2C2C3F;
+    color: #D1DCF0;
+    font-size: 1.2em;
+    padding: .8em;
+    display: table;
+    width: 100%;
+    height: 50px; }
+    .post .postHeader .userStats {
+      display: table;
+      width: 100%;
+      height: 50px; }
+      .post .postHeader .userStats .postAvatar {
+        height: 60px;
+        display: block;
+        position: relative; }
+        .post .postHeader .userStats .postAvatar .avatar {
+          height: 95px;
+          width: 95px;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: -60px;
+          border-radius: 100%; }
+        .post .postHeader .userStats .postAvatar .banBox {
+          color: red;
+          position: absolute;
+          top: -1.4em;
+          left: .5em;
+          z-index: 99;
+          font-weight: bold;
+          text-shadow: 2px 1px black; }
+      .post .postHeader .userStats .postRank {
+        display: block;
+        min-width: 150px;
+        font-size: .8em;
+        padding-bottom: .5em; }
+    .post .postHeader a {
+      text-decoration: none;
+      color: #D1DCF0; }
+      .post .postHeader a .userInfo {
+        width: 100%;
+        border-top: 1px solid #D1DCF0;
+        padding-top: .5em; }
+        .post .postHeader a .userInfo .postTitle {
+          font-weight: bold;
+          display: table-cell;
+          margin-bottom: 0; }
+        .post .postHeader a .userInfo p a {
+          color: #D1DCF0;
+          text-decoration: none; }
+        .post .postHeader a .userInfo .postTime {
+          display: block; }
+    .post .postHeader .userInfo {
+      width: 100%;
+      border-top: 1px solid #D1DCF0;
+      padding-top: .5em; }
+      .post .postHeader .userInfo .postTitle {
+        font-weight: bold;
+        display: table-cell;
+        margin-bottom: 0; }
+      .post .postHeader .userInfo p a {
+        color: #D1DCF0;
+        text-decoration: none; }
+      .post .postHeader .userInfo .postTime {
+        display: block; }
+  .post .infoBox {
+    position: relative; }
+    .post .infoBox .byUser {
+      display: table-cell;
+      text-align: right;
+      padding-bottom: .4em;
+      padding-right: 2em;
+      color: #D1DCF0; }
+    .post .infoBox p a {
+      color: #D1DCF0;
+      text-decoration: none; }
+  .post .moderatePost {
+    display: block;
+    text-align: right; }
+    .post .moderatePost form input {
+      display: inline-block; }
+  .post .replyButton {
+    text-align: right; }
+    .post .replyButton span a {
+      width: auto;
+      background: #2C2C3F;
+      color: #D1DCF0;
+      padding: .2em .4em;
+      border-radius: 10%;
+      text-decoration: none; }
+  .post .postBody {
+    background: #D1DCF0;
+    padding: 2em 1em 1em 1em;
+    color: #1E1E27;
+    min-height: 160px;
+    overflow: hidden; }
+    .post .postBody p {
+      margin-top: 0;
+      white-space: pre-wrap; }
+
+.linkImageContainer {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2em auto;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .linkImageContainer a {
+    padding: 200px; }
+
+#profileLayout {
+  width: 80%;
+  min-width: 240px;
+  min-height: 400px;
+  background: #2C2C3F;
+  margin: 0 auto;
+  padding: 1em;
+  color: #D1DCF0;
+  transition: 500ms ease; }
+  #profileLayout #change_profile_picture {
+    margin-top: 50px;
+    display: none; }
+  #profileLayout #change_gender,
+  #profileLayout #change_location,
+  #profileLayout #change_bio {
+    margin-top: 50px;
+    display: none; }
+  #profileLayout .ppContainer {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #profileLayout div {
+    border: 4px solid #1E1E27;
+    box-shadow: 5px 5px #1E1E27;
+    padding: .2em 2em 1em 2em;
+    margin: 0 0 20px 0; }
+    #profileLayout div button {
+      background: #1E1E27;
+      color: #D1DCF0;
+      border: none;
+      padding: .4em; }
+    #profileLayout div button:hover {
+      background: #484673; }
+  #profileLayout span {
+    color: #b59d2a;
+    font-weight: bold; }
+  #profileLayout #user_bio p {
+    white-space: nowrap; }
+
+.forumWelcome {
+  text-align: center;
+  font-size: 1.2em; }
+
+blockquote {
+  padding: 1em;
+  background: #a1aCF0;
+  border-radius: 2em; }
+  blockquote span {
+    color: midnightblue;
+    font-weight: bold; }
+
+.message {
+  white-space: pre-wrap; }
+  .message blockquote {
+    white-space: nowrap; }
+
+#writePost {
+  width: 80%;
+  max-width: 600px;
+  min-width: 200px;
+  min-height: 8em;
+  background: #2C2C3F;
+  margin: 0 auto;
+  padding: .2em 1em; }
+  #writePost textarea {
+    width: 100%; }
+  #writePost input {
+    width: 100%; }
+
+:target:before {
+  content: "";
+  display: block;
+  height: 120px;
+  /* fixed header height*/
+  margin: -120px 0 0;
+  /* negative fixed header height */ }
+
+.post.postSelected .postHeader {
+  background: #b59d2a; }
+
+input {
+  display: block;
+  margin: .5em 0 1em 0; }
+
+input[type=checkbox] {
+  display: inline-block;
+  margin-right: 10px; }
+
+input[type=submit] {
+  color: white;
+  background: #111;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  transition: 500ms ease; }
+
+input[type=submit]:hover {
+  background: #449; }
+
+#tos {
+  color: cornflowerblue;
+  text-decoration: none; }
+
+.inputContainer {
+  padding-left: .6em;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #334;
+  padding: 10px 50px;
+  border-radius: 30px; }
+  .inputContainer .hint {
+    color: #b59d2a; }
+
+div.register {
+  margin-bottom: 50px; }
+
+@media screen and (min-width: 512px) {
+  .post .postHeader .userStats .postRank {
+    display: table-cell; }
+  .post .postHeader .userInfo {
+    display: table; }
+    .post .postHeader .userInfo .postTime {
+      display: table-cell;
+      font-size: .8em;
+      text-align: right; } }
+@media screen and (min-width: 600px) {
+  #topNav {
+    display: table;
+    width: 100%; }
+
+  header nav #mobileMenu {
+    text-align: right;
+    display: table-cell;
+    width: 65%;
+    vertical-align: middle; }
+    header nav #mobileMenu li {
+      display: inline-block;
+      padding: 0 1em; }
+
+  header nav p {
+    display: none; }
+
+  #profileDesktop {
+    display: table-cell;
+    height: 78px;
+    width: 35%;
+    z-index: 999;
+    position: relative; }
+    #profileDesktop .profilePicContainer {
+      width: 70px;
+      height: 70px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 100%;
+      margin: 6px 0 4px 1em;
+      display: inline-block;
+      text-align: left;
+      overflow: hidden; }
+    #profileDesktop .profileName {
+      color: #D1DCF0;
+      position: absolute;
+      display: inline-block;
+      left: 6em;
+      top: 28px;
+      height: 100%; }
+      #profileDesktop .profileName a {
+        text-decoration: none;
+        color: #D1DCF0;
+        vertical-align: middle;
+        padding-top: 20px; }
+
+  header #breadcrumb {
+    display: table; }
+    header #breadcrumb div {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1em; }
+      header #breadcrumb div a {
+        width: auto;
+        font-size: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        color: #D1DCF0;
+        text-decoration: none; } }
+@media screen and (min-width: 660px) {
+  .post .postHeader .userStats .postAvatar {
+    display: table-cell;
+    width: 105px; }
+  .post .postHeader .userStats .postRank {
+    display: table-cell;
+    font-size: 1em; }
+  .post .postHeader .userStats a .postTime {
+    display: table-cell;
+    font-size: 1em;
+    text-align: right; }
+  .post .postHeader .userInfo {
+    display: table; }
+    .post .postHeader .userInfo a .postTime {
+      display: table-cell;
+      font-size: 1em;
+      text-align: right; }
+
+  .infoBox .byUser {
+    padding-left: 1em; } }
+
+/*# sourceMappingURL=layout.css.map */
